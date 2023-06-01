@@ -8,4 +8,6 @@ app.get('/', (req,res) => {res.send("Hello Browser")});
 
 app.get('/cameron', (req,res) => {res.send("Hello Cameron")});
 
+app.get('/garret', (req,res) => {res.send("Hello Garret")});
+
 app.listen(port, ()=>console.log("Listening"));
