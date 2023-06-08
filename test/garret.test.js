@@ -1,7 +1,7 @@
+const fetch = require("node-fetch2");
 
-
-const response = await fetch('http://localhost:3000/garret');
-
-const first_name = await response.text();
-
-expect(first_name).toBe("garret");
+it("It is a callback function",async ()=>{
+    const response = await fetch('http://localhost:3000/garret');
+    let first_name = await response.text();
+    expect(first_name).toBe('Hello Garret');
+})
